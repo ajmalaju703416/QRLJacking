@@ -1,14 +1,14 @@
-#!/usr/bin/python3.7
+#!/usr/bin/python3.8
 # -*- coding: utf-8 -*-
-#Written by: Karim shoair - D4Vinci ( QrlJacker-Framework )
+#Written by: Karim shoair - DVinci ( QrlJacker-Framework )
 from core import Cli,utils,Settings,db
 from core.color import *
 from sys import version_info as py_ver
 import argparse,os
 
-if ( (py_ver.major,py_ver.minor) !=(3,7) ) or ( py_ver.major==3 and py_ver.minor<7 ):
+if ( (py_ver.major,py_ver.minor) !=(3,8) ) or ( py_ver.major==3 and py_ver.minor<8 ):
     # The second condition is for the future releases of python
-    error("The framework is designed to work only on python 3.7 or above!")
+    error("The framework is designed to work only on python 3.8 or above!")
     error("You are using version "+".".join( map( str,[py_ver.major, py_ver.minor, py_ver.micro] )) )
     exit(0)
 
